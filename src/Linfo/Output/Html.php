@@ -174,13 +174,13 @@ class Html implements Output
 	<link href="./layout/'.$theme_css.'" rel="stylesheet">'.($show_icons ? '
 	<link href="./layout/icons.css" rel="stylesheet">' : ''
     ).'
-	<script src="./layout/scripts.min.js"></script>
+	<!-- <script src="./layout/scripts.min.js"></script> -->
 	<meta name="generator" content="'.$appName.' ('.$version.')">
 	<meta name="author" content="Joseph Gillotti &amp; friends">
 	<!--[if lt IE 8]>
 	<link href="./layout/old_ie.css" type="text/css" rel="stylesheet">
 	<![endif]-->
-	<link rel="stylesheet" type="text/css" href="./layout/mobile.css" media="screen and (max-width: 640px)">
+	<link rel="stylesheet" type="text/css" href="./layout/mobile.css" media="screen and (max-width: 1050px)" >
 </head>
 <body id="info">
 <div id="header">
@@ -999,7 +999,7 @@ class Html implements Output
 	<br />
 	Generated on '.date($settings['dates']).'
 </div>
-<script>Linfo.init()</script>
+<!-- <script>Linfo.init()</script> -->
 </body>
 </html>';
     }
